@@ -1,0 +1,79 @@
+* {
+	margin: 0 auto;
+}
+
+@font-face {
+    font-family: Source_Sans_Pro;
+    src: url('font/Source_Sans_Pro/SourceSansPro-Regular.ttf') /*Para os demais navegadores*/;
+    font-weight: normal;
+    font-style: normal;
+}
+
+#navegacao {
+	width: 15%;
+	height: 100%;
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 99;
+}
+
+#navegacao h2 {
+	color: white;
+}
+
+#navegacao ul {
+	list-style: none;
+}
+
+#navegacao ul li{
+	margin-top: 20px;
+	position: relative;
+	text-align: left;
+	margin-left: -40px;
+	font: 15px Source_Sans_Pro;
+}
+
+.mn {
+	left: 20px;
+}
+
+#navegacao ul li a {
+	width: 165px;
+    text-decoration: none;
+	font-weight: bold;
+	display: table-cell;
+	color: #d1d1d1;
+    text-decoration: none;
+	transition: background-color 0,5s , color 0,5s; 
+	transition-timing-function: ease-out;
+}
+
+#navegacao ul li a:hover {
+	color: limegreen;
+}
+
+hr {
+	width: 80%;
+	margin-top: 20px;
+    background-color: #b1b1b1;
+    height: 1px;
+	border: none;
+}
+
+#user {
+	top: 380px;
+	font-weight: bold;
+	color: white;
+}
+
+#user img {
+	height:20px;
+	position: relative; 
+	top: 4px;
+}
+
+#navegador {
+	width: 100%;
+	height: 100%;
+	border: none;
+}

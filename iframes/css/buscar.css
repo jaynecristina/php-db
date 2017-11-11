@@ -1,0 +1,62 @@
+* {
+	margin: 0 auto;
+}
+
+@font-face {
+    font-family: Source_Sans_Pro;
+    src: url('font/Source_Sans_Pro/SourceSansPro-Regular.ttf') /*Para os demais navegadores*/;
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	background: linear-gradient(#2F4F4F, #191970) ;
+}
+
+#busca {
+	position: absolute;
+	top: 10%;
+	left: 40%;
+	width: 30%;
+	height: 50px;
+	background-color: lightgrey;
+	border: none;
+	border-radius: 40px;
+	font: 20px Source_Sans_Pro;
+	padding-left: 40px;
+}
+
+img {
+	width: 200px;
+	height: 300px;
+	margin-top: 10px;
+	margin-right: 15px;
+	cursor: pointer;
+	margin-top: 200px;
+	margin-left: 300px;
+}
+
+.a {
+	width: 200px;
+	height: 300px;
+	cursor: pointer;
+	position: absolute;
+	margin-left: 300px;
+	margin-top: -300px; 
+	z-index: 50;
+}
+
+P {
+	position: absolute;
+	left: 22%;
+	font: 20px Source_Sans_Pro;
+	color: white;
+}
+
+.a:hover {
+	background-color: limegreen;
+	opacity: 0.5;
+	cursor: pointer;	
+	position: absolute;
+	
+}
