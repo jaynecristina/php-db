@@ -9,7 +9,7 @@
                 <style>
                     #rodape {
                         position: absolute;
-                        margin-top: 36px;
+                        margin-top: 58px;
                         width: 100%;
                         height: 80px;
                         background: black;
