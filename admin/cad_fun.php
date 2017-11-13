@@ -7,72 +7,72 @@
 		<title>Cadastrar Funcionário</title>
 		<meta charset="utf-8">
                 <style>
-                    #rodape {
+                        #rodape {
                         position: absolute;
-                        margin-top: 36px;
+                        margin-top: 92px;
                         width: 100%;
                         height: 80px;
                         background: black;
                         color: white;
                             }
 
-#rodape ul {
-    padding:0px;
-    margin:0px;
-    list-style:none;
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
-}
+                        #rodape ul {
+                            padding:0px;
+                            margin:0px;
+                            list-style:none;
+                                position: relative;
+                                top: 50%;
+                                transform: translateY(-50%);
+                        }
 
-#rodape ul li { 
-	display: inline;
-	margin-left: 20px;
-}
+                        #rodape ul li { 
+                                display: inline;
+                                margin-left: 20px;
+                        }
 
-#rodape ul li a {
-	color: #EDEDED;
-    text-decoration: none;
-}
+                        #rodape ul li a {
+                                color: #EDEDED;
+                            text-decoration: none;
+                        }
 
-#rodape ul li a:hover {
-    color: limegreen;
-}
+                        #rodape ul li a:hover {
+                            color: limegreen;
+                        }
 
-#rodape ul .btn {
-	margin-left: 60%;
-}
+                        #rodape ul .btn {
+                                margin-left: 60%;
+                        }
 
-#rodape ul .austtre {
-	margin-left: 10%;
-}
+                        #rodape ul .austtre {
+                                margin-left: 10%;
+                        }
 
-.share-btn {
-    display: inline-block;
-    color: #ffffff;
-    border: none;
-    padding: 10px;
-    width: 20px;
-	border-radius: 100%;
-    box-shadow: 0 2px 0 0 rgba(0,0,0,0.2);
-    outline: none;
-    text-align: center;
-}
+                        .share-btn {
+                            display: inline-block;
+                            color: #ffffff;
+                            border: none;
+                            padding: 10px;
+                            width: 20px;
+                            border-radius: 100%;
+                            box-shadow: 0 2px 0 0 rgba(0,0,0,0.2);
+                            outline: none;
+                            text-align: center;
+                        }
 
-.share-btn:hover {
-    color: limegreen;
-}
+                        .share-btn:hover {
+                            color: limegreen;
+                        }
 
-.share-btn:active {
-    position: relative;
-    top: 2px;
-    box-shadow: none;
-    color: #e2e2e2;
-    outline: none;
-}
+                        .share-btn:active {
+                            position: relative;
+                            top: 2px;
+                            box-shadow: none;
+                            color: #e2e2e2;
+                            outline: none;
+                        }
 
-.twitter     { background-color: #1c1c1c; }
-.facebook    { background-color: #1c1c1c; }
+                        .twitter     { background-color: #1c1c1c; }
+                        .facebook    { background-color: #1c1c1c; }
                 </style>
 	</head>
 	
