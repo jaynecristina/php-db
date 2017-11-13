@@ -12,7 +12,7 @@
                         margin-top: 58px;
                         width: 100%;
                         height: 80px;
-                        background: black;
+                        background: pink;
                         color: white;
                             }
 
