@@ -9,10 +9,10 @@
                 <style>
                     #rodape {
                         position: absolute;
-                        margin-top: 58px;
+                        margin-top: 36px;
                         width: 100%;
                         height: 80px;
-                        background: pink;
+                        background: black;
                         color: white;
                             }
 
@@ -113,13 +113,13 @@
 						<label>Senha</label><br>
 						<div style="margin-bottom: 12px" class="input-group">
 							<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-							<input id="login-password" type="password" class="form-control" name="pass" placeholder="•••••••">
+							<input id="login-password1"  type="password" class="form-control" name="pass" placeholder="•••••••">
 						</div>
 						
 						<label>Repita a Senha</label><br>
 						<div style="margin-bottom: 12px" class="input-group">
 							<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-							<input id="login-password" type="password" class="form-control" name="pasus" placeholder="•••••••">
+                                                        <input id="login-password"   type="password"  class="form-control" name="pasus" placeholder="•••••••">
 						</div>
 
 	  						<button type="submit" name="Enviar"class="btn btn-success">Registrar</button>
