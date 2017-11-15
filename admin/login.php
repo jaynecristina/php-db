@@ -44,7 +44,7 @@
 
 						<div style="margin-bottom: 12px" class="input-group">
 							<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-							<input id="login-password" type="password" class="form-control" name="pass" placeholder="Senhass">
+							<input id="login-password" type="password" class="form-control" name="pass" placeholder="Senha">
 						</div>
 
 						<div class="input-group">
