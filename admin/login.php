@@ -27,6 +27,14 @@
 							<a class='close' data-dismiss='alert' href='login.php'>×</a>Usuário ou Senha Incorreto!
 						</div>";
 							}}
+                                                        if (isset($_GET['id'])){
+							$id = $_GET['id'];
+						}	if (isset($id)) {
+							if ($id == "per") {
+								echo "<div class='alert alert-danger'>
+							<a class='close' data-dismiss='alert' href='login.php'>×</a>Usuário não permitido!
+						</div>";
+							}}
 						?>
   					
 	  					<div style="margin-bottom: 12px" class="input-group">
@@ -36,7 +44,7 @@
 
 						<div style="margin-bottom: 12px" class="input-group">
 							<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-							<input id="login-password" type="password" class="form-control" name="pass" placeholder="Senha">
+							<input id="login-password" type="password" class="form-control" name="pass" placeholder="Senhass">
 						</div>
 
 						<div class="input-group">

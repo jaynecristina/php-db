@@ -17,7 +17,7 @@
 	<?php
 	error_reporting(0);
 	session_start();
-	if (isset($_SESSION['user'])) {
+	if (isset($_SESSION['user'])  ) {
 		$logado = $_SESSION['user'];
 	}else{
 		header('location:../login.php');
