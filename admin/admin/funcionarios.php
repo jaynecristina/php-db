@@ -51,7 +51,7 @@
 require("../../coneccao.php");
 $registros = 7;
 
-$sql = "SELECT * FROM admin";
+$sql = "SELECT * FROM usuarios";
 $query = mysqli_query($con, $sql);
 
 if(isset($_GET['pagina'])){
@@ -65,7 +65,7 @@ $resultados = mysqli_num_rows($query);
 $inicial = ($registros*$pagina)-$registros;
 $numPaginas = ceil($resultados/$registros);
 
-$sql = "SELECT * FROM admin LIMIT $inicial, $registros";
+$sql = "SELECT * FROM usuarios LIMIT $inicial, $registros";
 $query = mysqli_query($con, $sql);
 
 echo "<div class='row'>

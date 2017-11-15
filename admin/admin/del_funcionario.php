@@ -14,7 +14,7 @@ if(isset($_GET['sair'])){
 require("../../coneccao.php");
 
 $id = $_GET['prod_id'];
-$sql = "DELETE FROM admin WHERE id = '$id'";
+$sql = "DELETE FROM usuarios WHERE id = '$id'";
 
 $query =  mysqli_query($con, $sql);
 if($query){

@@ -4,12 +4,12 @@
 		<meta name="viewport" content="width-device-width, initial-scale=1">
 		<link rel="stylesheet" type=
                       "text/css" href="admin/css/bootstrap.min.css">
-		<title>Cadastre-se</title>
+		<title>Cadastrar Funcionário</title>
 		<meta charset="utf-8">
                 <style>
                     #rodape {
                         position: absolute;
-                        margin-top: 36px;
+                        margin-top: 71px;
                         width: 100%;
                         height: 80px;
                         background: black;
@@ -80,8 +80,8 @@
 		<div class="container" style="margin-top:60px">
 			<div class="col-md-4 col-md-offset-4">
 				<div class="panel panel-default">
-	  				<div class="panel-heading"><h3 class="panel-title"><strong>Criar uma nova conta
-                                                </strong><h5>É gratuito e sempre será.</h5></h3>
+	  				<div class="panel-heading"><h3 class="panel-title"><strong>Cadastrar Cliente
+                                                </h3>
 		  			<div style="float:right; font-size: 80%; position: relative; top:-10px"><a href="#"></a></div>
 	  				</div>
 					<div class="panel-body">
@@ -97,7 +97,17 @@
 						</div>";
 							}}
 						?>
- 						
+ 						<label>Tipo</label><br>
+	  					<div style="margin-bottom: 12px" class="input-group">
+                                                   <span class="input-group-addon"><i class=" glyphicon glyphicon-asterisk"></i></span>
+							
+                                                    <select name="tipo" class="form-control">
+                                                        <option value="2">Selecionar Cargo</option>
+                                                        <option value="1">Administrador</option>
+                                                        <option value="0">Cliente</option>
+                                                        </select>      
+						</div>
+                                                    
   						<label>Usuário</label><br>
 	  					<div style="margin-bottom: 12px" class="input-group">
 							<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
@@ -113,13 +123,13 @@
 						<label>Senha</label><br>
 						<div style="margin-bottom: 12px" class="input-group">
 							<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-							<input id="login-password1"  type="password" class="form-control" name="pass" placeholder="•••••••">
+							<input id="login-password" type="password" class="form-control" name="pass" placeholder="•••••••">
 						</div>
 						
 						<label>Repita a Senha</label><br>
 						<div style="margin-bottom: 12px" class="input-group">
 							<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                                                        <input id="login-password"   type="password"  class="form-control" name="pasus" placeholder="•••••••">
+							<input id="login-password" type="password" class="form-control" name="pasus" placeholder="•••••••">
 						</div>
 
 	  						<button type="submit" name="Enviar"class="btn btn-success">Registrar</button>
@@ -153,10 +163,11 @@ if(isset($_POST['Enviar'])){
 $nome = $_POST['user'];
 $pass = $_POST['pass'];
 $email = $_POST['email'];
+$per = $_POST['tipo'];
 
 $passC = md5(base64_encode($pass));
 
-$sql = "INSERT INTO cliente (nome,email, senha) VALUES ('$nome', '$email', '$passC')";
+$sql = "INSERT INTO usuarios (id_per,nome,email, senha) VALUES ('$per','$nome', '$email', '$passC')";
 
 $query = mysqli_query($con, $sql);
 if($query){

@@ -97,7 +97,17 @@
 						</div>";
 							}}
 						?>
- 						
+ 						<label>Tipo</label><br>
+	  					<div style="margin-bottom: 12px" class="input-group">
+                                                   <span class="input-group-addon"><i class=" glyphicon glyphicon-asterisk"></i></span>
+							
+                                                    <select name="tipo" class="form-control">
+                                                        <option value="2">Selecionar Cargo</option>
+                                                        <option value="1">Administrador</option>
+                                                        <option value="0">Cliente</option>
+                                                        </select>      
+						</div>
+                                                    
   						<label>Usuário</label><br>
 	  					<div style="margin-bottom: 12px" class="input-group">
 							<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
@@ -153,10 +163,11 @@ if(isset($_POST['Enviar'])){
 $nome = $_POST['user'];
 $pass = $_POST['pass'];
 $email = $_POST['email'];
+$per = $_POST['tipo'];
 
 $passC = md5(base64_encode($pass));
 
-$sql = "INSERT INTO admin (nome,email, senha) VALUES ('$nome', '$email', '$passC')";
+$sql = "INSERT INTO usuarios (id_per,nome,email, senha) VALUES ('$per','$nome', '$email', '$passC')";
 
 $query = mysqli_query($con, $sql);
 if($query){
