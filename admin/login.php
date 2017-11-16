@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 	<head>
-		<meta name="viewport" content="width-device-width, initial-scale=1">
+            <meta charset="utf-8" name="viewport" content="width-device-width, initial-scale=1">
 		<link rel="stylesheet" type=
 			  "text/css" href="css/bootstrap.min.css">
 		<title>Projeto</title>
-		<meta charset="utf-8">
-	</head>
 	
 	<body style="background:#e1e1e1">
 		<div class="container" style="margin-top:60px">
